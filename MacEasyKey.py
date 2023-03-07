@@ -12,155 +12,155 @@ print('')
 pausa = float(1)
 
 #Letras
-def aF():
+def a_f():
     py.press('a')
     t.sleep(pausa)
 
-def bF():
+def b_f():
     py.press('b')
     t.sleep(pausa)
 
-def cF():
+def c_f():
     py.press('c')
     t.sleep(pausa)
 
-def dF():
+def d_f():
     py.press('d')
     t.sleep(pausa)
 
-def eF():
+def e_f():
     py.press('e')
     t.sleep(pausa)
 
-def fF():
+def f_f():
     py.press('f')
     t.sleep(pausa)
 
-def gF():
+def g_f():
     py.press('g')
     t.sleep(pausa)
 
-def hF():
+def h_f():
     py.press('h')
     t.sleep(pausa)
 
-def iF():
+def i_f():
     py.press('i')
     t.sleep(pausa)
 
-def jF():
+def j_f():
     py.press('j')
     t.sleep(pausa)
 
-def kF():
+def k_f():
     py.press('k')
     t.sleep(pausa)
 
-def lF():
+def l_f():
     py.press('l')
     t.sleep(pausa)
 
-def mF():
+def m_f():
     py.press('m')
     t.sleep(pausa)
 
-def nF():
+def n_f():
     py.press('n')
     t.sleep(pausa)
 
-def oF():
+def o_f():
     py.press('o')
     t.sleep(pausa)
 
-def pF():
+def p_f():
     py.press('p')
     t.sleep(pausa)
 
-def qF():
+def q_f():
     py.press('q')
     t.sleep(pausa)
 
-def rF():
+def r_f():
     py.press('r')
     t.sleep(pausa)
 
-def sF():
+def s_f():
     py.press('s')
     t.sleep(pausa)
 
-def tF():
+def t_f():
     py.press('t')
     t.sleep(pausa)
 
-def uF():
+def u_f():
     py.press('u')
     t.sleep(pausa)
 
-def vF():
+def v_f():
     py.press('v')
     t.sleep(pausa)
 
-def wF():
+def w_f():
     py.press('w')
     t.sleep(pausa)
 
-def xF():
+def x_f():
     py.press('x')
     t.sleep(pausa)
 
-def yF():
+def y_f():
     py.press('y')
     t.sleep(pausa)
 
-def zF():
+def z_f():
     py.press('z')
     t.sleep(pausa)
 
 #Não sei o nome desses botões
-def upF():
+def up_f():
     py.press('up')
     #t.sleep(pausa)    
 
-def rightF():
+def right_f():
     py.press('right')
     #t.sleep(pausa)
 
-def downF(i):
+def down_f(i):
     count = 0
     while count < i:        
         py.press('down')
         #t.sleep(pausa)
         count += 1
 
-def leftF():
+def left_f():
     py.press('left')
     #t.sleep(pausa)
 
 #Também não sei como nomear estes
-def enterF():
+def enter_f():
     py.press('enter')
     t.sleep(pausa)
 
-def pgdownF(i):    
+def pgdown_f(i):    
     count = 0
     while count < i:        
         py.press('pagedown')
         #t.sleep(pausa)
         count += 1
 
-def pgupF():
+def pgup_f():
     py.press('pageup')
     t.sleep(pausa)
 
-def homeF():
+def home_f():
     py.press('home')
     t.sleep(pausa)
 
-def endF():
+def end_f():
     py.press('end')
     t.sleep(pausa)
 
-def deleteF(i):
+def delete_f(i):
     count = 0
     while count < i:        
         py.press('delete')
@@ -169,32 +169,32 @@ def deleteF(i):
 
 
 #Muito menos estes
-def tabF():
+def tab_f():
     py.press('tab')
     t.sleep(pausa)
 
-def escF():
+def esc_f():
     py.press('esc')
     t.sleep(pausa)
 
-def f9F():
+def f9_f():
     py.press('f9')
     t.sleep(pausa)
 
 #Comandos
-def copyF():
+def copy_f():
     py.keyDown('ctrl')
     py.press('c')
     py.keyUp('ctrl')
     t.sleep(pausa)
 
-def pastF():
+def past_f():
     py.keyDown('ctrl')
     py.press('v')
     py.keyUp('ctrl')
     t.sleep(pausa)
 
-def alternF():
+def altern_f():
     py.keyDown('alt')
     py.press('tab')
     py.keyUp('alt')
@@ -204,33 +204,33 @@ def alternF():
 #Funções
 def saveContract():
     for i in range(1):        
-        dF()
-        #enterF()
+        d_f()
+        #enter_f()
         t.sleep(10)
-        rF()
-        downF(1)
-        enterF()
+        r_f()
+        down_f(1)
+        enter_f()
         t.sleep(3)
-        downF(1)
-        downF(1)
-        enterF()
-        downF(1)
-        tF()
-        pgdownF(4)        
-        downF(7)        
-        deleteF(19)
+        down_f(1)
+        down_f(1)
+        enter_f()
+        down_f(1)
+        t_f()
+        pgdown_f(4)        
+        down_f(7)        
+        delete_f(19)
         t.sleep(1)        
-        pastF()
+        past_f()
         t.sleep(1)
         py.click(x= 322, y= 103)#Arquivo
         py.click(x= 299, y= 127)#Salvar
         py.click(x= 834, y= 456)#ASPEC
         t.sleep(1)
-        escF()
+        esc_f()
         t.sleep(1)
-        lF()
-        enterF()
-        enterF()
+        l_f()
+        enter_f()
+        enter_f()
         t.sleep(5)
         py.click(x= 396, y= 54)#PDF
         t.sleep(5)
@@ -242,33 +242,29 @@ def saveContract():
         t.sleep(3)
         py.click(x= 839, y= 363)#ASPEC2
         t.sleep(1)
-        escF()
+        esc_f()
     return i
 
-
-#quant = int(input('insira quantidade de itens: '))
-#cod = int(input('insira codigo subgrupo: '))
 t.sleep(3)
-
 py.click(x= 1488, y= 321)#ASPEC0
 
 saveContract()
-downF(5)
+down_f(5)
 saveContract()
-downF(5)
+down_f(5)
 saveContract()
-downF(5)
+down_f(5)
 saveContract()
-downF(7)
+down_f(7)
 saveContract()
-downF(4)
+down_f(4)
 saveContract()
-downF(4)
+down_f(4)
 saveContract()
-downF(4)
+down_f(4)
 saveContract()
-downF(4)
+down_f(4)
 saveContract()
-downF(5)
+down_f(5)
 saveContract()
-downF(4)
+down_f(4)

@@ -248,23 +248,11 @@ def saveContract():
 t.sleep(3)
 py.click(x= 1488, y= 321)#ASPEC0
 
-saveContract()
-down_f(5)
-saveContract()
-down_f(5)
-saveContract()
-down_f(5)
-saveContract()
-down_f(7)
-saveContract()
-down_f(4)
-saveContract()
-down_f(4)
-saveContract()
-down_f(4)
-saveContract()
-down_f(4)
-saveContract()
-down_f(5)
-saveContract()
-down_f(4)
+action_mount = list(input('Type action number separated by common. For example: 1,2,3....').split(','))
+try:
+      action_mount = [int(number_actions) for number_actions in action_mount]
+      for i in action_mount:
+            down_f(i)
+            saveContract()
+except:
+      print('Input invalid argument!')
